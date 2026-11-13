@@ -1,16 +1,48 @@
-# This is a sample Python script.
+# - PSEUDOCODE BINGO -
 
-# Press Maj+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
-
-
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
-
-
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+# ********************************************
+# carte_bingo : Fonction qui génère visuellement la carte bingo du joueur.
+# ********************************************
+# Entrées :
+# Sorties :
+# ********************************************
+# --Début--
+#
+#
+# --Fin--
+#
+#
+#
+# ********************************************
+# tirage_chiffre : Fonction qui tire un chiffre et vérifie si elle est dans la carte du joueur.
+# ************** Variables *******************
+# Entrées : chiffre_choisi (float), liste_actuelle (ls)
+# Sorties : liste_actuelle (ls)
+# ********************************************
+# --Début--
+#
+# --Fin--
+#
+#
+# ********************************************
+# vérification_carte : Fonction qui vérifie si la combinaison de chiffres gagne.
+# ************** Variables *******************
+# Entrées :
+# Sorties :
+# ********************************************
+# --Début--
+#
+# --Fin--
+#
+#
+# ********************************************
+# Programme Principal
+# ************** Variables *******************
+# Entrées : nom (str), prenom (str), Nb_essais (int), score (float), chiffre_choisi (int) liste_actuelle (ls
+# Intermédiaires :
+# Sorties :
+# ********************************************
+# --Début--
+#
+#
+# --Fin--
