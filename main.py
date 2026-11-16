@@ -46,3 +46,11 @@
 #
 #
 # --Fin--
+
+import random
+
+def carte_bingo():
+    nombres = random.sample(range(1, 76), 25)
+    grille = [nombres[i * 5:(i + 1) * 5] for i in range(5)]
+    grille[2][2] = "FREE"
+    return grille
