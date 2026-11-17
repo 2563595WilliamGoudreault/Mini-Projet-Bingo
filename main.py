@@ -49,8 +49,15 @@
 
 import random
 
-def carte_bingo():
+def creer_carte_bingo():
     nombres = random.sample(range(1, 76), 25)
     grille = [nombres[i * 5:(i + 1) * 5] for i in range(5)]
     grille[2][2] = "FREE"
     return grille
+
+def afficher_carte_bingo(carte):
+    print("\n  B    I    N    G    O")
+    print("-" * 25)
+    for ligne in carte:
+        print(" " for case in ligne))
+    print("-" * 25)
