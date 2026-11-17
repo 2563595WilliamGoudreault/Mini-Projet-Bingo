@@ -55,9 +55,18 @@ def creer_carte_bingo():
     grille[2][2] = "FREE"
     return grille
 
-def afficher_carte_bingo(carte):
+def afficher_carte_bingo(grille):
     print("\n  B    I    N    G    O")
     print("-" * 25)
-    for ligne in carte:
-        print(" " for case in ligne))
+    for ligne in grille:
+        # Formate chaque élément sur 4 caractères pour aligner les colonnes
+        print(" ".join(f"{str(case):^4}" for case in ligne))
     print("-" * 25)
+
+def marquer_numero(grille, numero):
+    for i in range(5):
+        for j in range(5):
+            if grille[i][j] == numero:
+                grille[i][j] = "X"
+                return True
+    return False
