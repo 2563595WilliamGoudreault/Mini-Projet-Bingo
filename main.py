@@ -70,3 +70,21 @@ def marquer_numero(grille, numero):
                 grille[i][j] = "X"
                 return True
     return False
+
+def verifier_carte_bingo(grille):
+    symboles_valides = ("X", "FREE")
+
+    # Vérifier les lignes et les colonnes
+    for i in range(5):
+        if all(case in symboles_valides for case in grille[i]):
+            return True
+        if all(grille[ligne][i] in symboles_valides for ligne in range(5)):
+            return True
+
+    # Vérifier les deux diagonales
+    if all(grille[i][i] in symboles_valides for i in range(5)):
+        return True
+    if all(grille[i][4 - i] in symboles_valides for i in range(5)):
+        return True
+
+    return False
