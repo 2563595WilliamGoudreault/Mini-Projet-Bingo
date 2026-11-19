@@ -88,3 +88,14 @@ def verifier_carte_bingo(grille):
         return True
 
     return False
+
+def jouer_bingo():
+    ma_grille = creer_carte_bingo()
+
+    # Crée un boulier avec les nombres de 1 à 75 mélangés
+    boulier = list(range(1, 76))
+    random.shuffle(boulier)
+
+    tours = 0
+    print("=== DÉBUT DE LA PARTIE DE BINGO ===")
+    afficher_carte_bingo(ma_grille)
